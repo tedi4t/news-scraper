@@ -23,6 +23,12 @@ async function getNewsHeadlines(url) {
     }
 }
 
+
+
+
+
+
+
 (async () => {
     const newsUrl = "https://www.bbc.com/news"; // Change this to any news website
     const headlines = await getNewsHeadlines(newsUrl);
