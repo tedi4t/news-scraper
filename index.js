@@ -4,7 +4,7 @@ const cheerio = require('cheerio');
 async function getNewsHeadlines(url) {
     try {
         const { data } = await axios.get(url, {
-            headers: { "User-Agent": "Mozilla/5.0" }
+            headers: { "User-Agent": "Mozilla/5.0" },
         });
         const $ = cheerio.load(data);
         const headlines = [];
